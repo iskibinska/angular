@@ -21,7 +21,7 @@
 	   </tr>		
 		
 
-		<tr ng-repeat="cust in customers">
+		<tr ng-repeat="cust in customers | limitTo:1">
 		
 			<td> {{cust.joined | date:'longDate'}} </td>
 			<td>  {{cust.name | lowercase}} </td>
