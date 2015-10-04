@@ -23,7 +23,7 @@
 
 		<tr ng-repeat="cust in customers">
 		
-			<td> {{cust.joined}} </td>
+			<td> {{cust.joined | date}} </td>
 			<td>  {{cust.name}} </td>
 			<td>  {{cust.city}} </td>
 			<td>  {{cust.orderTotal | currency}} </td>
