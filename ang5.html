@@ -24,8 +24,8 @@
 		<tr ng-repeat="cust in customers">
 		
 			<td> {{cust.joined | date:'longDate'}} </td>
-			<td>  {{cust.name}} </td>
-			<td>  {{cust.city}} </td>
+			<td>  {{cust.name | lowercase}} </td>
+			<td>  {{cust.city | uppercase}} </td>
 			<td>  {{cust.orderTotal | currency}} </td>
 
 
